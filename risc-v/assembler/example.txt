@@ -1,0 +1,46 @@
+# Load
+lb x5, 22(x6)
+lh x5, 26(x6)
+lw x5, 33(x6)
+lbu x5, 38(x6)
+lhu x5, 52(x6)
+# Store
+sb x5, 14(x6)
+sh x5, 19(x6)
+sw x5, 16(x6)
+# Shifts
+sll x5, x6, x7
+slli x5, x6, 11
+srl x5, x6, x7
+srli x5, x6, 17
+sra x5, x6, x7
+srai x5, x6, 13
+# Arithmetic
+add x5, x6, x7
+addi x5, x6, 12
+sub x5, x6, x7
+lui x5, 0x537
+auipc x1, 0x121 
+# Logical
+xor x5, x6, x9
+xori x5, x6, 20
+or x5, x6, x8
+ori x5, x6, 24
+and x5, x6, x7
+andi x5, x6, 36
+# Compare
+slt x8, x5, x6 
+slti x9, x5, 26
+sltu x10, x5, x7
+sltiu x11, x7, 29
+# Branches 
+beq x5, x6, exit
+bne x5, x6, exit
+blt x5, x6, exit
+bge x5, x6, exit
+bltu x5, x6, exit
+bgeu x5, x6, exit
+# Jump&Link
+jal x1, exit
+jalr x1, 99(x5)
+exit:
